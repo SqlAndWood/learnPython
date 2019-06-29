@@ -4,10 +4,7 @@
 
 print("Take a bow")
 
-
-
 def tri_recursion(k):
-  
   if(k>0):
     result = k+tri_recursion(k-1)
     print(result)
@@ -44,17 +41,20 @@ def askQuestions():
   print(response)
 
 
-def exampleWhileLoop(i):
-  while (i < 3):
+def exampleWhileLoop(i, loop):
+  while (i < loop):
     print(i)
     i += 1
 
-exampleWhileLoop(4)
+exampleWhileLoop(4,12)
 
 #List vs dictionaries
 
 def exampleList():
   list("bob")
+  colors = {'red','blue'}
+  print (colors)
 
+  
 exampleList()
 
