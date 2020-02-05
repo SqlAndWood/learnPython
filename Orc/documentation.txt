@@ -1,0 +1,20 @@
+
+ https://realpython.com/documenting-python-code/
+
+ AW new to documenting Python: this is a serious attempt to upskill
+
+ According to PEP 8:
+   comments should have a maximum length of 72 characters.
+       If a comment is going to be greater than the comment char limit,
+       sing multiple lines for the comment is appropriate:
+
+ TODO: Add condition for when val is None
+ BUG:
+ FIXME:
+
+
+  Commenting Code via Type Hinting (Python 3.5+)
+    def hello_name(name: str) -> str:
+        return(f"Hello {name}")
+
+ str.__doc__ = "I'm a little string doc! Short and stout; here is my input and print me for my out"
