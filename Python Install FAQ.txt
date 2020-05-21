@@ -1,0 +1,97 @@
+Helpful for initial Install:https://medium.com/@kswalawage/install-python-and-jupyter-notebook-to-windows-10-64-bit-66db782e1d02
+   ENSURE YOU SELECT 'Install for All Users' as this will install Python to C:\Program Files\PythonXX
+
+	Should you use Virtual Environment, you 'Deactivate' the Environment from teh command prompt: Deactivate.bat
+	This is how you get Jupyter Notebook access to the entire HDD of C:\
+	C:\VirtualEnvironments\ve\Scripts\Jupyter notebook   <-- ie run from C:\ and call the command 'Jupyter notebook'.
+
+Python installation path: 
+
+AW 14 Nov 2019: I used Python Ver 3.7 for the following , as Ver 3.8 has a lot of incompatibilities, which in turn returned too many errors to fix.
+
+C:\%userprofile%\appdata
+
+Note, the below is referenced at: https://jupyter.org/install.html
+
+pip is a recursive acronym for "Pip Installs Packages"; is a de facto standard package-management system used to install and manage software packages written in Python. 
+
+1. Ensure Python (latest version) is installed
+
+2. If necessary, upgrade Python pip with the following command (from the command prompt, located in the appropriate Python folder):
+      python -m pip install --upgrade pip
+      
+3. Install Jupyter lab with the following command (from command prompt, in python\scripts folder):
+      python -m pip install jupyterlab
+      python -m pip install jupyter
+      
+
+5. Execute jupyter notebook
+      jupyter notebook
+      
+
+6. Install the following
+
+      pip install --upgrade setuptools
+      
+      pip install pandas
+         Note that Pandus comes with the followign two, however run them seperately just to ensure latest version.
+         pip install numpy
+         pip install pytx
+         
+      pip install OpenPyXL    (read/write Excel 2010 xlsx/xlsm files)
+         
+      pip install scipy
+      pip install matplotlib
+      
+      pip install xlrd        (Read Excel Data)
+      pip install xlwt        (Write as Excel)
+      pip install XlsxWriter  (Write file with xlsx extention )
+      
+      pip install geos
+         Note that geos comes with the followign two, however run them seperately just to ensure latest version.
+         pip install pillow
+         pip install lxml
+  
+  
+   
+  
+      pip install ez_setup
+      
+      
+      
+The following are for debugging, recommended by Raymond 
+	pip install pyflakes    ## pyflakes filename.py
+	pip install coverage	    # https://pypi.org/project/coverage/
+	pip install mypy
+	pip install pytest	##https://docs.pytest.org/en/latest/
+	  (no longer supported) pip install doctests ##https://docs.python.org/2/library/doctest.html
+	pip install xdoctest
+
+
+
+https://medium.com/@ageitgey/learn-how-to-use-static-type-checking-in-python-3-6-in-10-minutes-12c86d72677b
+be  aware you can expect data types as part of functions
+def get_first_name(full_name: str) -> str:
+    return full_name.split(" ")[0]
+
+Type checking: https://realpython.com/python-type-checking/
+Martelli model of scalability: https://rutlib5.com/book/30378/p/53
+
+https://pybay.com/site_media/slides/raymond2017-keynote/threading.html#david-baron-at-mozillas-san-francisco-office
+
+
+
+
+Further installs:
+
+pip install pickle
+
+
+
+
+
+
+
+
+
+
